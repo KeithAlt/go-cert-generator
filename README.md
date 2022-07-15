@@ -25,6 +25,16 @@ func main() {
 ___
 ### Accessible Fields:
 ```go
+type Cert struct {
+	PemPath   string `binding:"required"`
+	KeyPath   string `binding:"required"`
+	PemBytes  []byte `binding:"required"`
+	KeyBytes  []byte `binding:"required"`
+	CertBytes []byte `binding:"required"`
+}
+```
+
+```go
   cert, err := gencert.Generate()
   if err != nil {
     log.Fatal(err)
