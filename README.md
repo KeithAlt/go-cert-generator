@@ -17,6 +17,9 @@ I will likely change this in the future to be configurable but defaulting to `"e
  |_ README.md
 ```
 ____
+### Install Instructions:
+> ``go install https://github.com/KeithAlt/go-cert-generator``
+____
 ### Example Implementation:
 ```go
 // An example of package usage with Gin ...
@@ -60,7 +63,5 @@ type Cert struct {
   fmt.Println(cert.CertBytes) // -> []Byte field containing the cert contents
 ```
 ___
-### Install Instructions:
-``go install https://github.com/KeithAlt/go-cert-generator``
-#### Side-Note:
+
 If you are checking out this package for usage in an internally communicating API, consider [GRPC](https://github.com/grpc/grpc)
