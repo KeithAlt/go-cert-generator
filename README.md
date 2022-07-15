@@ -3,6 +3,19 @@
 A utility package for generating self-signed SSL certificates within your Go application. No third-party tools required.
 Self-signed certs will be generated in the `"etc/ssl/"` directory of your application. As of now, this path is not changeable.
 I will likely change this in the future to be configurable but defaulting to `"etc/ssl"` to ensure backwards compatibility.
+
+```
+[ your-awesome-go-app ]
+ |_ cmd
+ |_ pkg
+ |_ internal
+ |_ etc
+ |   |_ssl
+ |  	|_ server.key   <- Generated key
+ |	|_ server.pem   <- Generated pem
+ |
+ |_ README.md
+```
 ____
 ### Example Implementation:
 ```go
