@@ -6,7 +6,7 @@ I will likely change this in the future to be configurable but defaulting to `"e
 ____
 ### Example Implementation:
 ```go
-// En example of package usage with Gin ...
+// An example of package usage with Gin ...
 
 func main() {
 	cert, err := gencert.Generate()
